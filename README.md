@@ -8,8 +8,6 @@ SAM‑guided Multi‑view Decoding Network for 3D TOF‑MRA intracranial aneurys
 
 ## 📋 Requirements
 
-### Research Source‑Code Version
-
 - Python >= 3.9
 - PyTorch >= 2.0 (CUDA is strongly recommended)
 - [segment‑anything](https://link.wtturl.cn/?target=https%3A%2F%2Fgithub.com%2Ffacebookresearch%2Fsegment%25E2%2580%2591anything&scene=im&aid=582478&lang=zh) (SAM ViT‑B)
@@ -104,7 +102,7 @@ Auto device selection (try GPU first, fall back to CPU):
 "MRA IA Segmentation Tool.exe" -i INPUT_PATH -o OUTPUT_PATH -m MODEL_PATH -dev auto
 ```
 
-## ⚙ Environment Variables (Research Source‑Code Version)
+## ⚙ Environment Variables
 
 ```
 export nnUNet_raw=/path/to/nnUNet_raw
@@ -120,7 +118,7 @@ Prepare dataset following nnU‑Net data format, then run preprocessing:
 nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
 ```
 
-## 🚀 Train (Research Source‑Code Version)
+## 🚀 Train
 
 Train a single fold:
 
@@ -144,7 +142,7 @@ bash scripts/predict.sh
 > 
 > For Windows users, please use the compiled executable tool described above.
 
-## 📊 Evaluation (Lesion‑level detection metrics)
+## 📊 Evaluation
 
 Compute lesion‑level detection metrics with IoU‑based matching strategy:
 
